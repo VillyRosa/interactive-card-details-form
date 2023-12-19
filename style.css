@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;500&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+
+    gap: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bg-main {
+    position: absolute;
+    height: 100vh;
+    left: 0;
+    z-index: -1;
+}
+
+.cards {
+    width: 28%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.cards .card {
+    width: 447px;
+    height: 245px;
+    background-repeat: no-repeat;
+    color: hsl(0, 0%, 100%);
+    margin: 14px 0;
+}
+
+.cards .front-card {
+    padding: 20px;
+    background-image: url('./images/bg-card-front.png');
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.cards .front-card .bottom {
+    width: 100%;
+}
+
+.cards .front-card .bottom p {
+    padding: 16px 2px;
+    font-size: 28px;
+    letter-spacing: 0.3rem;
+}
+
+.cards .front-card .bottom footer p {
+    padding: 0;
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 0.1rem;
+}
+
+.cards .front-card .bottom footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cards .back-card {
+    background-image: url('./images/bg-card-back.png');
+    padding: 0 55px 5px 0;
+    font-size: 16px;
+    letter-spacing: 0.1rem;
+
+    align-self: flex-end;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+form {
+    width: 20%;
+
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+form .inputBox {
+    width: 100%;
+    gap: 3px;
+    display: flex;
+    flex-direction: column;
+}
+
+form .inputBox label {
+    color: hsl(278, 68%, 11%);
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 0.1em;
+}
+
+form .inputBox input {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid hsl(270, 3%, 87%);
+    border-radius: 6px;
+    outline: none;
+}
+
+form .inputBox input::placeholder {
+    color: hsl(270, 3%, 87%);
+}
+
+form .inputBox input:focus {
+    border-color: hsl(279, 6%, 55%);
+}
+
+form .line {
+    width: 100%;
+    gap: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+form .line .inputBox .line {
+    width: 100%;
+    gap: 5px;
+    justify-content: flex-start;
+}
+
+form .line .inputBox .line input {
+    width: 50%;
+}
+
+form input[type="submit"] {
+    border: none;
+    background-color: hsl(278, 68%, 11%);
+    padding: 10px 12px;
+    border-radius: 6px;
+    color: hsl(0, 0%, 100%);
+    cursor: pointer;
+}
+
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+form .inputBox span {
+    color: hsl(0, 90%, 43%);
+    font-size: 13px;
+}
+
+form .inputBox input.inputError {
+    border-color: hsl(0, 90%, 43%);
+}
+
+form .inputBox input.inputError:focus {
+    border-color: hsl(0, 90%, 43%);
+}
+
+.completed {
+    width: 20%;
+
+    gap: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.completed .texts h2 {
+    text-align: center;
+    color: hsl(278, 68%, 11%);
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+}
+
+.completed .texts p {
+    text-align: center;
+    margin-top: 8px;
+    color: hsl(279, 6%, 55%);
+}
+
+.completed input[type="submit"] {
+    width: 100%;
+    border: none;
+    background-color: hsl(278, 68%, 11%);
+    padding: 10px 12px;
+    border-radius: 6px;
+    color: hsl(0, 0%, 100%);
+    cursor: pointer;
+}
+
+.attribution {
+    position: absolute;
+    bottom: 0;
+    padding: 12px;
+    color: hsl(279, 6%, 55%);
+}
+
+.attribution a {
+    color: hsl(278, 68%, 11%);
+}
+
+.hidden {
+    display: none;
+}
